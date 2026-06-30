@@ -50,7 +50,7 @@ Dear ImGui using Hexa.NET (OpenGL3 and SDL3). Overlays over a program.
 
 ### Usage
 
-``` NET
+``` csharp
 ImGuiCore imGuiCore = new();
 
 // Draw your UI here
