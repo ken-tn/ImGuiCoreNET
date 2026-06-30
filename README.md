@@ -45,8 +45,9 @@ Dear ImGui using Hexa.NET (OpenGL3 and SDL3). Overlays over a program.
 
 ### Installation
 
-<p>Right click Dependencies -> Add Project Reference... -> ImGuiCoreNET.dll</p>
-<p>Right click Dependencies -> Manage NuGet Packages... -> Hexa.NET.ImGui -> Install</p>
+#### Visual Studio
+* Right click Dependencies -> Add Project Reference... -> ImGuiCoreNET.dll</p>
+* Right click Dependencies -> Manage NuGet Packages... -> Hexa.NET.ImGui -> Install</p>
 
 ### Usage
 
