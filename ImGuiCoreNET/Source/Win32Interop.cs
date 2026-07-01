@@ -6,7 +6,6 @@ using System.Runtime.InteropServices;
 public abstract class Win32Interop
 {
 	// Constants
-	public const int VK_F5 = 0x74;
 	public const int VK_LBUTTON = 0x01;
 	public const int VK_RBUTTON = 0x02;
 	public const int VK_MBUTTON = 0x04;
