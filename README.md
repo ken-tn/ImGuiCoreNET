@@ -85,7 +85,7 @@ public class Example
 [product-screenshot]: images/demo.png
 ![Screen Shot][product-screenshot]
 
-_For more examples, please refer to the [ImGui Documentation](https://github.com/ocornut/imgui/wiki/Getting-Started)_
+_For more examples, please refer to the [ImGui example window](https://github.com/ocornut/imgui/blob/master/imgui_demo.cpp)_
 
 ### Dependencies
 
