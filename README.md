@@ -66,7 +66,7 @@ public class Example
 
 	public void OnInitialize()
 	{
-        // imGuiCore.SetToggleKey(0x74);  // Virtual-Key Code for F5
+        // imGuiCore.SetToggleKey(0x74);  // Virtual-Key Code for F5, this key toggles the UI.
 		imGuiCore.DrawMenu = DrawMenu;
 		imGuiCore.StartImGuiThread();
 	}
