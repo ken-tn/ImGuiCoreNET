@@ -78,15 +78,4 @@ public partial class ImGuiCore
 			ShutdownImGui();
 		}
 	}
-
-	/// <summary>
-	/// Call from the main thread
-	/// </summary>
-	public void Deinitialize()
-	{
-		SDLEvent quitEvent = default;
-		imguiRunning = false;
-		SDL.PushEvent(ref quitEvent);
-		imguiThread?.Join();
-	}
 }

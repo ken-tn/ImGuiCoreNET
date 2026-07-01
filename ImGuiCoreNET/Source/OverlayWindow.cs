@@ -17,7 +17,7 @@ public partial class ImGuiCore
 		return menuVisible = !menuVisible;
 	}
 
-	public void UpdateZOrder()
+	private void UpdateZOrder()
 	{
 		bool shouldBeTopMost = menuVisible && Win32Interop.IsProcessForeground(gamePid);
 
@@ -54,7 +54,7 @@ public partial class ImGuiCore
 	private int lastHeight = 0;
 	private int currentWidth = 1920;
 	private int currentHeight = 1080;
-	public void SetWindowSize()
+	private void SetWindowSize()
 	{
 		if (lastWidth != currentWidth || lastHeight != currentHeight)
 		{

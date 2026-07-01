@@ -26,7 +26,7 @@ public unsafe partial class ImGuiCore
 	}
 
 	// Captures events for ImGui to process (i.e. inputs)
-	public void ProcessEvents()
+	private void ProcessEvents()
 	{
 		SDLEvent sdlEvent = default;
 
@@ -59,7 +59,7 @@ public unsafe partial class ImGuiCore
 		}
 	}
 
-	public void ProcessWindowsEvents()
+	private void ProcessWindowsEvents()
 	{
 		if (Win32Interop.GetCursorPosition(hwnd) is Point p)
 		{

@@ -3,6 +3,7 @@ using Hexa.NET.ImGui;
 using Hexa.NET.ImGui.Backends.OpenGL3;
 using Hexa.NET.ImGui.Backends.SDL3;
 using Hexa.NET.SDL3;
+using SDLEvent = Hexa.NET.SDL3.SDLEvent;
 using SDLWindow = Hexa.NET.SDL3.SDLWindow;
 
 public unsafe partial class ImGuiCore
@@ -113,6 +114,17 @@ public unsafe partial class ImGuiCore
 		}
 
 		SDL.Quit();
+	}
+
+	/// <summary>
+	/// Call from the main thread
+	/// </summary>
+	public void Deinitialize()
+	{
+		SDLEvent quitEvent = default;
+		imguiRunning = false;
+		SDL.PushEvent(ref quitEvent);
+		imguiThread?.Join();
 	}
 }
 

@@ -13,13 +13,13 @@ public partial class ImGuiCore
 		Gl.Clear(GLClearBufferMask.ColorBufferBit);
 	}
 
-	public void IdleFrame()
+	private void IdleFrame()
 	{
 		Gl.SwapBuffers();
 		SDL.Delay(20); // Slow down rendering to save resources
 	}
 
-	public void EndFrame()
+	private void EndFrame()
 	{
 		ImGui.Render();
 		ImGuiImplOpenGL3.RenderDrawData(ImGui.GetDrawData());
@@ -33,7 +33,7 @@ public partial class ImGuiCore
 		Gl.SwapBuffers(); // Refreshes at VSync
 	}
 
-	public void RenderFrame(Action DrawMenu)
+	private void RenderFrame(Action DrawMenu)
 	{
 		ImGuiImplOpenGL3.NewFrame();
 		ImGuiImplSDL3.NewFrame();
