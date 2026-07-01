@@ -79,9 +79,10 @@ _For more examples, please refer to the [ImGui Documentation](https://github.com
 
 ### Dependencies
 
-* Make sure these are loaded at runtime, along with ImGuiCoreNET.dll
+* Make sure these assemblies are loaded at runtime
 
 ```
+ImGuiCoreNET.dll
 cimgui.dll
 Hexa.NET.ImGui.Backends.SDL3.dll
 Hexa.NET.SDL3.dll
