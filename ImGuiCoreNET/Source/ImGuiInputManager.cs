@@ -5,7 +5,6 @@ using SDLEvent = Hexa.NET.SDL3.SDLEvent;
 
 public unsafe partial class ImGuiCore
 {
-	public bool menuVisible;
 	private int openVK = 0x74;
 
 	/// <summary>
@@ -22,7 +21,7 @@ public unsafe partial class ImGuiCore
 		// Detect an F5 press using the toggle bit
 		if ((Win32Interop.GetAsyncKeyState(openVK) & 1) != 0)
 		{
-			menuVisible = !menuVisible;
+			ToggleMenu();
 		}
 	}
 

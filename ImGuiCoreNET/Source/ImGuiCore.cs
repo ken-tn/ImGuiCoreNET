@@ -15,9 +15,9 @@ public partial class ImGuiCore
 	public uint windowId;
 	public Action DrawMenu;
 
+	public bool menuVisible;
 	public Thread imguiThread;
 	public bool imguiRunning;
-	public static bool MenuVisible => false;
 
 	/// <summary>
 	/// Start the ImGui thread. Set DrawMenu before calling.

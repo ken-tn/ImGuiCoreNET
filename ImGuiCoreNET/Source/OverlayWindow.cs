@@ -8,6 +8,15 @@ public partial class ImGuiCore
 	private readonly uint gamePid = (uint)Process.GetCurrentProcess().Id;
 	private bool lastTopMost;
 
+	/// <summary>
+	/// Toggles the UI
+	/// </summary>
+	/// <returns>True when visible, false when hidden.</returns>
+	public bool ToggleMenu()
+	{
+		return menuVisible = !menuVisible;
+	}
+
 	public void UpdateZOrder()
 	{
 		bool shouldBeTopMost = menuVisible && Win32Interop.IsProcessForeground(gamePid);
