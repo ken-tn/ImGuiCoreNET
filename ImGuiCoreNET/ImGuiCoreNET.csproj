@@ -5,6 +5,8 @@
     <AssemblyName>ImGuiCoreNET</AssemblyName>
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
+    <AssemblyVersion>1.1.2.0</AssemblyVersion>
+    <FileVersion>1.1.2.0</FileVersion>
   </PropertyGroup>
   
   <ItemGroup>

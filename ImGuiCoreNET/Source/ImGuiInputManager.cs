@@ -11,7 +11,7 @@ public unsafe partial class ImGuiCore
 	/// <summary>
 	/// Set the toggle key to open ImGui
 	/// </summary>
-	/// <param name="key"></param>
+	/// <param name="VK_Keycode">Virtual keycode value</param>
 	public void SetToggleKey(int VK_Keycode)
 	{
 		openVK = VK_Keycode;
