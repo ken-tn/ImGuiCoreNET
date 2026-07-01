@@ -62,13 +62,22 @@ public class Example
 	public void DrawMenu()
 	{
 		ImGui.ShowDemoWindow();
+
+        // imGuiCore.ToggleMenu(); // Toggles the menu visiblity
 	}
 
+    // On program start
 	public void OnInitialize()
 	{
         // imGuiCore.SetToggleKey(0x74);  // Virtual-Key Code for F5, this key toggles the UI.
 		imGuiCore.DrawMenu = DrawMenu;
 		imGuiCore.StartImGuiThread();
+	}
+
+    // On program exit
+    public void OnDeinitialize()
+	{
+        imGuiCore.Deinitialize();
 	}
 }
 ```
