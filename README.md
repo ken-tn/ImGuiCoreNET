@@ -52,18 +52,23 @@ Dear ImGui using Hexa.NET (OpenGL3 and SDL3). Overlays over a program.
 ### Usage
 
 ``` csharp
-ImGuiCore imGuiCore = new();
+using Hexa.NET.ImGui;
 
-// Draw your UI here
-public void DrawMenu()
+public class Example
 {
-	ImGui.ShowDemoWindow();
-}
+	ImGuiCore imGuiCore = new();
 
-public override void OnInitialize()
-{
-	imGuiCore.DrawMenu = DrawMenu;
-	imGuiCore.StartImGuiThread();
+	// Draw your UI here
+	public void DrawMenu()
+	{
+		ImGui.ShowDemoWindow();
+	}
+
+	public void OnInitialize()
+	{
+		imGuiCore.DrawMenu = DrawMenu;
+		imGuiCore.StartImGuiThread();
+	}
 }
 ```
 
